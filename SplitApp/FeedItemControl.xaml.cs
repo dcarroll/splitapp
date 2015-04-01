@@ -32,7 +32,7 @@ namespace SplitApp
             System.Diagnostics.Debug.WriteLine("Data Context Changed...");
             Element post = (Element)args.NewValue;
             Paragraph p = new Paragraph();
-            if (post != null)
+            if (post != null && post.body != null)
             {
                 foreach (Messagesegment ms in post.body.messageSegments)
                 {

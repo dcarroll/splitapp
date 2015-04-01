@@ -118,7 +118,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 
-                <Image Source="{Binding actor.photo.fullEmailPhotoUrl}" Grid.Row="0" Margin="0,0,0,0" Stretch="UniformToFill" AutomationProperties.Name="{Binding actor}"/>
+                <Image Source="{Binding actor.photo.fullEmailPhotoUrl}" VerticalAlignment="Top" Grid.Row="0" Margin="0,0,0,0" AutomationProperties.Name="{Binding actor}"/>
                 <StackPanel x:Name="itemDetailTitlePanel" Grid.Row="0" Grid.Column="1">
                     <TextBlock x:Name="itemTitle" Margin="20,20,0,0" Text="{Binding header.text}" Style="{StaticResource SubheaderTextBlockStyle}" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Global User Interface"/>
                     <local:FeedItemControl x:Name="url" Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" />
